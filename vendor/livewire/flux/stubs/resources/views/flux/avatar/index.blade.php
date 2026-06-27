@@ -1,4 +1,6 @@
-@php $iconVariant = $iconVariant ??= $attributes->pluck('icon:variant'); @endphp
+@blaze(memo: true)
+
+@php $iconVariant ??= $attributes->pluck('icon:variant'); @endphp
 
 @props([
     'iconVariant' => 'solid',
@@ -71,7 +73,7 @@ $classes = Flux::classes()
         'sm' => '[--avatar-radius:var(--radius-md)]',
         'xs' => '[--avatar-radius:var(--radius-sm)]',
     })
-    ->add('relative isolate flex items-center justify-center')
+    ->add('relative flex-none isolate flex items-center justify-center')
     ->add('[:where(&)]:font-medium')
     ->add('rounded-[var(--avatar-radius)]')
     ->add($hasTextContent ? '[:where(&)]:bg-zinc-200 [:where(&)]:dark:bg-zinc-600 [:where(&)]:text-zinc-800 [:where(&)]:dark:text-white' : '')
@@ -171,7 +173,7 @@ $label = $alt ?? $name;
 <flux:with-tooltip :$tooltip :$attributes>
     <flux:button-or-link :attributes="$attributes->class($classes)->merge($circle ? ['data-circle' => 'true'] : [])" :$as :$href data-flux-avatar data-slot="avatar" data-size="{{ $size }}">
         <?php if ($src): ?>
-            <img src="{{ $src }}" alt="{{ $alt ?? $name }}" class="rounded-[var(--avatar-radius)]">
+            <img src="{{ $src }}" alt="{{ $alt ?? $name }}" class="rounded-[var(--avatar-radius)] size-full object-cover">
         <?php elseif ($icon): ?>
             <flux:icon :name="$icon" :variant="$iconVariant" :class="$iconClasses" />
         <?php elseif ($hasTextContent): ?>

@@ -1,4 +1,9 @@
-@aware([ 'variant' ])
+@blaze(fold: true, unsafe: [
+    // variant props
+    'filterable', 'indicator', 'loading',
+])
+
+@aware([ 'variant', 'indicator' ])
 
 @props([
     'variant' => 'default',
@@ -11,6 +16,4 @@ $variant = $variant !== 'default' && Flux::componentExists('select.variants.' . 
     : 'default';
 @endphp
 
-<flux:with-field :$attributes>
-    <flux:delegate-component :component="'select.option.variants.' . $variant">{{ $slot }}</flux:delegate-component>
-</flux:with-field>
+<flux:delegate-component :component="'select.option.variants.' . $variant">{{ $slot }}</flux:delegate-component>

@@ -1,11 +1,14 @@
-@php $iconTrailing = $iconTrailing ??= $attributes->pluck('icon:trailing'); @endphp
-@php $iconVariant = $iconVariant ??= $attributes->pluck('icon:variant'); @endphp
+@blaze(fold: true, unsafe: ['icon:trailing', 'icon:variant'])
+
+@php $iconTrailing ??= $attributes->pluck('icon:trailing'); @endphp
+@php $iconVariant ??= $attributes->pluck('icon:variant'); @endphp
 
 @props([
     'iconVariant' => 'mini',
     'iconTrailing' => null,
     'heading' => '',
     'icon' => null,
+    'keepOpen' => false,
 ])
 
 @php
@@ -31,7 +34,7 @@ $iconClasses = Flux::classes()
         </x-slot:suffix>
     </flux:menu.item>
 
-    <flux:menu>
+    <flux:menu :keep-open="$keepOpen">
         {{ $slot }}
     </flux:menu>
 </ui-submenu>
