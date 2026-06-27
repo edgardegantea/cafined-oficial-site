@@ -1,4 +1,37 @@
-v2cafinedorg.zip
-public/storage/files/OrientaTec-release.apk
+# ==========================================
+# SEGURIDAD CRÍTICA (NUNCA SUBIR)
+# ==========================================
 .env
-node_modules
+.env.backup
+.env.production
+auth.json
+
+# ==========================================
+# DEPENDENCIAS (NO SUBIR, EL SERVIDOR NO LAS NECESITA)
+# ==========================================
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ==========================================
+# COMPILADOS Y CACHÉ (VAMOS A SUBIR EL BUILD)
+# ==========================================
+# NOTA: public/build NO está ignorado aquí para poder subirlo
+public/hot
+public/storage
+storage/*.key
+/bootstrap/cache/
+
+# ==========================================
+# ARCHIVOS DEL SISTEMA OPERATIVO Y PESADOS
+# ==========================================
+.idea
+.vscode
+.DS_Store
+*.sqlite
+*.db
+*.zip
+*.tar.gz
+*.apk
+*.mp4
