@@ -255,7 +255,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© <?php echo date('Y'); ?>. <a href="https://cafined.org/" class="hover:underline">cafined lab™</a>. All Rights Reserved. Created by <a href="https://cafined.org/angelarmenta/" class="hover:underline">Roberto Ángel Meléndez-Armenta</a>. Developed by <a href="https://cafined.org/edegantea/" class="hover:underline">edegantea</a>.
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© <?php echo date('Y'); ?>. <a href="https://cafined.org/" class="hover:underline">cafined lab™</a>. All Rights Reserved. Created by <a href="https://cafined.org/angelarmenta/" class="hover:underline">Roberto Ángel Meléndez-Armenta</a>. Developed by <a href="https://cafined.org/edegantea/" class="hover:underline">edegantea :P</a>.
           </span>
             <div class="flex mt-4 sm:justify-center sm:mt-0">
                 {{-- ... (Iconos de redes sociales) ... --}}
