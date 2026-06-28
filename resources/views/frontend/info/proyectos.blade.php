@@ -1,155 +1,110 @@
 <x-layouts.public.public>
 
-    <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+    <section class="border-b border-stone-100 py-12 px-4 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h1 class="text-4xl font-bold tracking-tight text-stone-900 mb-3">Proyectos</h1>
+            <p class="text-lg text-stone-500">
+                Explora nuestra colección de proyectos, herramientas y desarrollos creados por nuestra comunidad.
+            </p>
+        </div>
+    </section>
 
-            <div class="text-center mb-5">
-                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                    ÁREA DE PROYECTOS
-                </h1>
-                <p class="text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-                    Explora nuestra colección de proyectos, herramientas y desarrollos creados por nuestra comunidad.
-                </p>
-            </div>
+    <section class="max-w-screen-xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
 
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 mt-12">
-
-
-
-                <article class="flex flex-col bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-                    <a href="#">
-                        <img class="object-cover w-full h-48" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Imagen del proyecto">
-                    </a>
-
-                    <div class="flex flex-col flex-grow p-8">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Python</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Green Logistic</span>
-                        </div>
-
-                        <a href="#">
-                            <h2 class="mb-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
-                                SATCi
-                            </h2>
-                        </a>
-
-                        <p class="flex-grow mb-6 text-sm font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
-                            Una plataforma completa para administrar recursos empresariales, diseñada para ser rápida, accesible y fácil de mantener.
-                        </p>
-
-                        <hr class="my-4 border-gray-200 dark:border-gray-700">
-
-                        <div class="flex items-center justify-between mt-auto pt-2">
-                            <div class="flex items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full object-cover" src="https://ui-avatars.com/api/?name=Juan+Perez&background=random" alt="Avatar del autor">
-                                <span class="text-sm font-medium text-gray-900 dark:text-white">
-                                    Juan Pérez
-                                </span>
-                            </div>
-
-                            <div class="flex space-x-3 text-sm font-medium text-blue-600 dark:text-blue-500">
-                                <a href="#" class="hover:underline inline-flex items-center gap-1">
-                                    Ver más
-                                </a>
-                            </div>
-                        </div>
+            <article class="group flex flex-col bg-white rounded-xl border border-stone-200 overflow-hidden hover:border-stone-300 hover:shadow-md transition-all duration-200">
+                <div class="overflow-hidden">
+                    <img class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300"
+                         src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                         alt="SATCi">
+                </div>
+                <div class="flex flex-col flex-grow p-6">
+                    <div class="flex flex-wrap gap-1.5 mb-3">
+                        <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-600">Python</span>
+                        <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-600">Green Logistic</span>
                     </div>
-                </article>
-
-
-
-
-
-
-                <article class="flex flex-col bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-                    <a href="#">
-                        <img class="object-cover w-full h-48" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Imagen del proyecto">
-                    </a>
-
-                    <div class="flex flex-col flex-grow p-8">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Laravel</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Tailwind CSS</span>
+                    <h2 class="text-xl font-bold tracking-tight text-stone-900 group-hover:text-teal-700 transition-colors mb-2">
+                        SATCi
+                    </h2>
+                    <p class="flex-grow text-sm text-stone-500 line-clamp-3 mb-4">
+                        Una plataforma completa para administrar recursos empresariales, diseñada para ser rápida, accesible y fácil de mantener.
+                    </p>
+                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <div class="flex items-center gap-2.5">
+                            <img class="w-7 h-7 rounded-full object-cover"
+                                 src="https://ui-avatars.com/api/?name=Juan+Perez&background=random" alt="Juan Pérez">
+                            <span class="text-sm text-stone-600">Juan Pérez</span>
                         </div>
-
-                        <a href="{{ route('saberes360') }}">
-                            <h2 class="mb-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
-                                saberes360
-                            </h2>
+                        <a href="#" class="text-sm font-semibold text-teal-600 hover:text-teal-800 transition-colors">
+                            Ver más →
                         </a>
-
-                        <p class="flex-grow mb-6 text-sm font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
-                            Proyecto enfocado en la educación virtual que propone un enfoque integral para mejorar el proceso de enseñanza-aprendizaje.
-                        </p>
-
-                        <hr class="my-4 border-gray-200 dark:border-gray-700">
-
-                        <div class="flex items-center justify-between mt-auto pt-2">
-                            <div class="flex items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full object-cover" src="https://ui-avatars.com/api/?name=Itzel+Espinoza+López&background=random" alt="Avatar del autor">
-                                <span class="text-sm font-medium text-gray-900 dark:text-white">
-                                    Itzel Espinoza López
-                                </span>
-                            </div>
-
-                            <div class="flex space-x-3 text-sm font-medium text-blue-600 dark:text-blue-500">
-                                <a href="{{ route('saberes360') }}" class="hover:underline inline-flex items-center gap-1">
-                                    Ver más
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                </article>
+                </div>
+            </article>
 
+            <article class="group flex flex-col bg-white rounded-xl border border-stone-200 overflow-hidden hover:border-stone-300 hover:shadow-md transition-all duration-200">
+                <div class="overflow-hidden">
+                    <img class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300"
+                         src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
+                         alt="saberes360">
+                </div>
+                <div class="flex flex-col flex-grow p-6">
+                    <div class="flex flex-wrap gap-1.5 mb-3">
+                        <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-600">Laravel</span>
+                        <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-600">Tailwind CSS</span>
+                    </div>
+                    <a href="{{ route('saberes360') }}">
+                        <h2 class="text-xl font-bold tracking-tight text-stone-900 group-hover:text-teal-700 transition-colors mb-2">
+                            saberes360
+                        </h2>
+                    </a>
+                    <p class="flex-grow text-sm text-stone-500 line-clamp-3 mb-4">
+                        Proyecto enfocado en la educación virtual que propone un enfoque integral para mejorar el proceso de enseñanza-aprendizaje.
+                    </p>
+                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <div class="flex items-center gap-2.5">
+                            <img class="w-7 h-7 rounded-full object-cover"
+                                 src="https://ui-avatars.com/api/?name=Itzel+Espinoza&background=random" alt="Itzel Espinoza López">
+                            <span class="text-sm text-stone-600">Itzel Espinoza López</span>
+                        </div>
+                        <a href="{{ route('saberes360') }}" class="text-sm font-semibold text-teal-600 hover:text-teal-800 transition-colors">
+                            Ver más →
+                        </a>
+                    </div>
+                </div>
+            </article>
 
-
-
-                <article class="flex flex-col bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <article class="group flex flex-col bg-white rounded-xl border border-stone-200 overflow-hidden hover:border-stone-300 hover:shadow-md transition-all duration-200">
+                <a href="{{ route('orientatec') }}" class="overflow-hidden block">
+                    <img class="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300"
+                         src="{{ asset('storage/images/projects/orientatec.jpeg') }}" alt="OrientaTec">
+                </a>
+                <div class="flex flex-col flex-grow p-6">
+                    <div class="flex flex-wrap gap-1.5 mb-3">
+                        <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-600">Laravel</span>
+                        <span class="text-xs font-medium px-2.5 py-0.5 rounded-full bg-stone-100 text-stone-600">Tailwind CSS</span>
+                    </div>
                     <a href="{{ route('orientatec') }}">
-                        <img class="object-cover w-full h-48" src="{{ asset('storage/images/projects/orientatec.jpeg') }}" alt="Imagen del proyecto">
+                        <h2 class="text-xl font-bold tracking-tight text-stone-900 group-hover:text-teal-700 transition-colors mb-2">
+                            OrientaTec
+                        </h2>
                     </a>
-
-                    <div class="flex flex-col flex-grow p-8">
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">Laravel</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300">Tailwind CSS</span>
+                    <p class="flex-grow text-sm text-stone-500 line-clamp-3 mb-4">
+                        Aplicación de orientación vocacional para estudiantes de bachillerato. Identifica tus intereses y sugiere las carreras del ITSM que mejor se adaptan a tu perfil.
+                    </p>
+                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <div class="flex items-center gap-2.5">
+                            <img class="w-7 h-7 rounded-full object-cover"
+                                 src="https://ui-avatars.com/api/?name=Yiran+Lagunes&background=random" alt="Yiran Lagunes">
+                            <span class="text-sm text-stone-600">Ing. Yiran Lagunes Guzman</span>
                         </div>
-
-                        <a href="{{ route('orientatec') }}">
-                            <h2 class="mb-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
-                                OrientaTec
-                            </h2>
+                        <a href="{{ route('orientatec') }}" class="text-sm font-semibold text-teal-600 hover:text-teal-800 transition-colors">
+                            Ver más →
                         </a>
-
-                        <p class="flex-grow mb-6 text-sm font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
-                            OrientaTec es una aplicación de orientación vocacional dirigida a estudiantes de bachillerato. A través de un cuestionario interactivo, identifica tus intereses académicos y te sugiere las carreras del Instituto Tecnológico Superior de Misantla que mejor se relacionan con tu perfil.
-                        </p>
-
-                        <hr class="my-4 border-gray-200 dark:border-gray-700">
-
-                        <div class="flex items-center justify-between mt-auto pt-2">
-                            <div class="flex items-center space-x-3">
-                                <img class="w-9 h-9 rounded-full object-cover" src="https://ui-avatars.com/api/?name=Juan+Perez&background=random" alt="Avatar del autor">
-                                <span class="text-sm font-medium text-gray-900 dark:text-white">
-                                    Ing. Yiran Lagunes Guzman
-                                </span>
-                            </div>
-
-                            <div class="flex space-x-3 text-sm font-medium text-blue-600 dark:text-blue-500">
-                                <a href="{{ route('orientatec') }}" class="hover:underline inline-flex items-center gap-1">
-                                    Ver más
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                </article>
+                </div>
+            </article>
 
-
-
-
-
-
-            </div>
         </div>
     </section>
 
