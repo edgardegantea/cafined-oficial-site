@@ -20,7 +20,7 @@ Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
 
-Route::get('/inicio', [FrontendController::class, 'index'])->name('inicio');
+Route::redirect('/inicio', '/');
 
 Route::get('/equipo', [FrontendController::class, 'equipo'])->name('equipo');
 Route::get('/activities', [ActivityController::class, 'index'])->name('activities');
