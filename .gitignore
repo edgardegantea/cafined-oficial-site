@@ -23,6 +23,9 @@ public/storage
 storage/*.key
 /bootstrap/cache/
 
+# Vistas compiladas de Blade (se generan en tiempo de ejecución, NO subir)
+/storage/framework/views/
+
 # ==========================================
 # ARCHIVOS DEL SISTEMA OPERATIVO Y PESADOS
 # ==========================================
