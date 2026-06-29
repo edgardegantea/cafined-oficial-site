@@ -1,1 +1,0 @@
-components.layouts.public.public<?php /**PATH /Users/edgardeganteaguilar/Herd/cafinedv3/storage/framework/views/7fe29a174da2db4079b4aceb33e071da.blade.php ENDPATH**/ ?>

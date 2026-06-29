@@ -29,7 +29,7 @@
                     @endif
                     <div class="p-5 flex flex-col flex-1">
                         <p class="text-xs font-medium text-stone-400 mb-2 tracking-wide">
-                            {{ $post->published_at->locale('es_ES')->isoFormat('LL') }}
+                            {{ $post->published_at?->locale('es_ES')->isoFormat('LL') ?? '' }}
                         </p>
                         <h2 class="text-base font-semibold text-stone-900 group-hover:text-teal-700 transition-colors leading-snug mb-2">
                             {{ $post->title }}

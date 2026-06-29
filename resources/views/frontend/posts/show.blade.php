@@ -27,7 +27,7 @@
                     {{ $post->title }}
                 </h1>
                 <p class="text-sm text-stone-400">
-                    Publicado el {{ $post->created_at->locale('es_ES')->isoFormat('LL') }}
+                    Publicado el {{ $post->created_at?->locale('es_ES')->isoFormat('LL') ?? '' }}
                 </p>
             </header>
 
